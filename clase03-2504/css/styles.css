@@ -1,0 +1,32 @@
+h1 {
+  color: rgb(83, 83, 159);
+}
+
+.normal {
+  font-weight: normal;
+}
+
+p span {
+  font-weight: bold;
+}
+
+span {
+  font-weight: normal;
+}
+
+p.texto-grande { 
+  font-size: 40px;
+}
+
+#texto1 {
+  color:orange
+}
+
+div {
+  height: 50px;
+  background-color: lightcoral;
+  color: white;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
