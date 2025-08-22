@@ -1,0 +1,19 @@
+<form>
+  <input type="text" placeholder="Nombre" [value]="nombre" />
+
+  <input type="email" placeholder="Correo electrónico" (change)="actualizarValor($event)" />
+
+  <p>{{correo}}</p>
+
+  <select name="pais" id="pais">
+    @for (pais of paises; track pais.id) {
+      <option [id]="pais.id" [value]="pais.value">{{pais.nombre}}</option>
+    }
+  </select>
+
+  @if (esValido) {
+    <button type="submit" (click)="enviarFormulario()">Enviar</button>
+  } @else {
+    <p>El formulario no es valido.</p>
+  }
+</form>
